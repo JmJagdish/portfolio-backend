@@ -5,7 +5,7 @@ import ApiResponse from "./utils/ApiResponse.js";
 import errorHandler from "./middleware/error.middleware.js";
 
 // Routes
-// import projectRoutes from "./routes/project.routes.js";
+import projectRoutes from "./routes/project.route.js";
 // import skillRoutes from "./routes/skill.routes.js";
 // import experienceRoutes from "./routes/experience.routes.js";
 // import contactRoutes from "./routes/contact.routes.js";
@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
    API Routes
 ======================================== */
 
-// app.use("/api/projects", projectRoutes);
+app.use("/api/projects", projectRoutes);
 // app.use("/api/skills", skillRoutes);
 // app.use("/api/experiences", experienceRoutes);
 // app.use("/api/contact", contactRoutes);
