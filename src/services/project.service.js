@@ -1,4 +1,4 @@
-import Project from "../models/Project.model.js";
+import Project from "../models/project.model.js";
 import ApiError from "../utils/ApiError.js";
 
 export const getAllProjects = async () => {
